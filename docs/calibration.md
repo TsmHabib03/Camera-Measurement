@@ -4,13 +4,13 @@ PlaneMeasure converts camera coordinates into physical coordinates using the sup
 
 ## Print the marker
 
-1. Open `assets/calibration/planemeasure-marker-50mm.svg` in a browser or vector-capable document viewer.
-2. Print at **100%**, **Actual size**, or **No scaling**.
+1. Press **Download print-ready PDF** in the application's Calibration panel.
+2. Send the A4 PDF to the print shop and ask them to print it without resizing.
 3. Disable options such as Fit to page, Shrink oversized pages, or Scale to printable area.
 4. Use a physical ruler or caliper to verify that the outside black square measures **50.00 mm on both sides**.
 5. If it does not measure 50.00 mm, correct the printer settings before using it.
 
-The browser page containing the raw SVG may place the marker at the top-left of a sheet. That is expected. Cut around it with enough white paper left outside the black border to keep the boundary easy to detect.
+The PDF centers the marker on an A4 page and includes a 100 mm verification line. Keep enough white paper outside the black border so the boundary remains easy to detect.
 
 ## Place the marker
 

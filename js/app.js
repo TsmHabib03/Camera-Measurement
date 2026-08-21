@@ -3,6 +3,7 @@ import { CameraController } from './camera.js';
 import { MarkerCalibrator } from './calibration.js';
 import { MeasurementController } from './measurement.js';
 import { loadHistory, saveHistory, loadTests, saveTests, downloadFile } from './storage.js';
+import { createCalibrationPdf } from './calibration-pdf.js';
 
 const root = document.querySelector('#app');
 renderApp(root);
@@ -29,6 +30,7 @@ function bindEvents() {
   $('switchCameraButton').addEventListener('click', () => camera.switchCamera().catch(() => {}));
   $('clearMeasurementButton').addEventListener('click', () => measurement.clear());
   $('saveMeasurementButton').addEventListener('click', saveCurrentMeasurement);
+  $('downloadMarkerButton').addEventListener('click', () => downloadFile('planemeasure-marker-50mm-a4.pdf', createCalibrationPdf(), 'application/pdf'));
   $('clearHistoryButton').addEventListener('click', () => { state.history = []; saveHistory(state.history); renderHistory(); });
   $('unitSelect').addEventListener('change', (event) => { state.unit = event.target.value; renderMeasurement(); renderHistory(); });
   $('precisionSelect').addEventListener('change', (event) => { state.precision = Number(event.target.value); renderMeasurement(); renderHistory(); });
