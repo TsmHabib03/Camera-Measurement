@@ -27,6 +27,7 @@ import {
   Trash2,
   X,
 } from 'lucide';
+import calibrationMarkerUrl from '../assets/calibration/planemeasure-marker-50mm.svg?url';
 
 const iconSet = { AlertCircle, Bug, Camera, CheckCircle2, ChevronRight, CircleHelp, Copy, Download, FileDown, Gauge, History, Home, Maximize2, MoveHorizontal, MoveVertical, Play, RefreshCw, RotateCcw, Ruler, Save, ScanLine, Settings2, Square, SwitchCamera, Trash2, X };
 
@@ -95,7 +96,7 @@ export function renderApp(root) {
             <div class="flex items-start justify-between gap-3"><div><h2 class="text-sm font-semibold text-slate-900">Calibration status</h2><p class="mt-1 text-xs text-slate-500">50.00 mm reference marker</p></div><span id="calibrationState" class="rounded-lg bg-amber-50 px-2.5 py-1.5 text-xs font-semibold text-amber-700">Required</span></div>
             <div class="mt-5 divide-y divide-slate-100 rounded-xl border border-slate-200"><div class="status-row"><span>Marker detected</span><span id="markerDetectedValue">No</span></div><div class="status-row"><span>Physical scale</span><span id="scaleValue" class="mono-number">No</span></div><div class="status-row"><span>Perspective correction</span><span id="perspectiveValue">Inactive</span></div><div class="status-row"><span>Detection quality</span><span id="qualityValue">--</span></div></div>
             <p id="calibrationMessage" class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs leading-5 text-amber-800">Place the supplied marker flat beside the object and keep all four corners visible.</p>
-            <a href="/assets/calibration/planemeasure-marker-50mm.svg" target="_blank" class="secondary-button mt-3 w-full"><i data-lucide="download" class="size-4"></i> Open printable marker</a>
+            <a href="${calibrationMarkerUrl}" target="_blank" class="secondary-button mt-3 w-full"><i data-lucide="download" class="size-4"></i> Open printable marker</a>
           </section>
 
           <section data-mobile-panel="history" class="panel p-5">
