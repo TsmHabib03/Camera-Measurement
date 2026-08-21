@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="50mm" viewBox="0 0 50 50" role="img" aria-labelledby="title desc">
+  <title id="title">PlaneMeasure 50 millimeter calibration marker</title>
+  <desc id="desc">A square black-bordered fiducial marker with a four by four encoded pattern.</desc>
+  <rect width="50" height="50" fill="#fff"/>
+  <path fill="#000" fill-rule="evenodd" d="M0 0h50v50H0zM4 4v42h42V4z"/>
+  <g fill="#000">
+    <rect x="9" y="9" width="8" height="8"/>
+    <rect x="25" y="9" width="8" height="8"/>
+    <rect x="17" y="17" width="8" height="8"/>
+    <rect x="33" y="17" width="8" height="8"/>
+    <rect x="9" y="25" width="8" height="8"/>
+    <rect x="17" y="25" width="8" height="8"/>
+    <rect x="25" y="33" width="8" height="8"/>
+    <rect x="33" y="33" width="8" height="8"/>
+  </g>
+</svg>
